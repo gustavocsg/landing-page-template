@@ -1,0 +1,29 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.navbar {
+  display: flex;
+  flex-wrap: row wrap;
+  height: 100px;
+  background: pink;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  flex: 20%;
+}
+
+.menu {
+  flex: 80%;
+}
+
+.view {
+  border: 1px solid greenyellow;
+  /* border-radius: 5px; */
+}
