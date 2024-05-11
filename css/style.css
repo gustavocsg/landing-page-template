@@ -23,7 +23,7 @@ body {
 
 .logo {
   flex: 20%;
-  text-align: center;
+  text-align: left;
 }
 
 .logo h1 {
@@ -102,6 +102,25 @@ body {
   font-size: 70px;
 }
 
+.headline p {
+  color: grey;
+  text-align: left;
+}
+
+.botao-contrate {
+  background: #755fe4;
+  padding: 20px;
+  color: white;
+  text-transform: uppercase;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.botao-contrate:hover {
+  background: #1c2046;
+}
+
 .img-headline {
   margin-right: 10%;
   flex: 40%;
@@ -110,6 +129,50 @@ body {
 
 .img-headline img {
   max-width: 100%;
+}
+
+section {
+  display: inline-block;
+  margin-top: 50px;
+  margin-left: 5%;
+  margin-right: 5%;
+  height: 400px;
+  text-align: center;
+  padding: 5%;
+  width: 90%;
+}
+
+section h2 {
+  width: 100%;
+  font-size: 50px;
+  margin: 0;
+  font-family: "Lobster", cursive;
+  color: #1c2046;
+}
+
+.servicos {
+  display: inline-block;
+  margin-top: 5%;
+}
+
+.card {
+  display: inline-block;
+  width: 30%;
+  padding: 20px;
+  margin: 1%;
+  border: 1px solid #755fe4;
+  border-radius: 10px;
+}
+
+.card:hover {
+  background: #755fe4;
+  color: white;
+  padding-top: 70px;
+  cursor: pointer;
+}
+
+.card:hover img {
+  display: none;
 }
 
 /* A classe view e suas variantes foram criadas apenas para melhorar a visualização da área do elemento na hora de editar */
