@@ -6,18 +6,19 @@
 
 body {
   margin: 0;
-  margin-left: 10%;
-  margin-right: 10%;
+  /* margin-left: 10%;
+  margin-right: 10%; */
   font-family: "Roboto", sans-serif;
 }
 
 .navbar {
   display: flex;
-  flex-wrap: row wrap;
+  flex-flow: row wrap;
   height: 100px;
-  /* background: pink; */
   justify-content: center;
   align-items: center;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 .logo {
@@ -27,42 +28,96 @@ body {
 
 .logo h1 {
   font-family: "Lobster", sans-serif;
-  color: #180f4a;
+  color: #1c2046;
   font-size: 34px;
 }
 
 .menu {
+  display: flex;
+  flex-flow: row wrap;
   flex: 80%;
   text-align: right;
-  padding: 20px;
+  padding: 20px 0 20px 20px;
+  /* justify-content: flex-end; */
 }
 
 .menu a {
-  color: #180f4a;
+  color: #1c2046;
   text-decoration: none;
   font-size: 20px;
   padding: 20px 16px;
 }
 
 .menu a:hover {
-  color: #ff2978;
-  border-top: 4px solid #180f4a;
+  color: #755fe4;
+  border-top: 4px solid #1c2046;
 }
 
-#botao {
-  background: #180f4a;
+.menu-texto {
+  flex: 50%;
+}
+
+.menu-botao {
+  flex: 5%;
+}
+
+.menu-botao a {
+  background: #1c2046;
   padding: 10px 25px;
   color: white;
   border-radius: 5px;
   margin-left: 5%;
 }
 
-#botao:hover {
+.menu-botao a:hover {
   border: none;
-  background: #ff2978;
+  color: white;
+  background: #755fe4;
 }
 
-/* .view {
-  border: 1px solid greenyellow;
-  background: pink;
-} */
+.header {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.headline {
+  margin-left: 10%;
+  flex: 40%;
+}
+
+.headline h2 {
+  font-weight: 900;
+  color: #1c2046;
+  padding: 0;
+  margin: 0;
+}
+
+.headline-titulo-menor {
+  letter-spacing: 15px;
+}
+
+.headline-titulo-maior {
+  font-size: 70px;
+}
+
+.img-headline {
+  margin-right: 10%;
+  flex: 40%;
+  text-align: center;
+}
+
+.img-headline img {
+  max-width: 100%;
+}
+
+/* A classe view e suas variantes foram criadas apenas para melhorar a visualização da área do elemento na hora de editar */
+.view {
+  border: 1px solid black;
+  background: grey;
+}
+
+.view:hover {
+  border-color: blue;
+}
