@@ -1,3 +1,38 @@
+@media screen and (min-width: 1900px) {
+  .logo {
+    flex: 15%;
+    margin-left: 20%;
+  }
+
+  .menu {
+    flex: 45%;
+    margin-right: 20%;
+  }
+
+  .headline {
+    margin-left: 20%;
+    flex: 30%;
+  }
+
+  .img-headline {
+    margin-right: 20%;
+    flex: 30%;
+  }
+
+  section {
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 5%;
+    width: 80%;
+  }
+
+  .whatsapp-link {
+    position: fixed;
+    bottom: 5px;
+    right: 10%;
+  }
+}
+
 @media screen and (max-width: 1050px) {
   .menu {
     display: none;
@@ -63,5 +98,9 @@
 @media screen and (max-width: 767px) {
   .whatsapp-link {
     display: none;
+  }
+
+  footer {
+    height: 450px;
   }
 }
