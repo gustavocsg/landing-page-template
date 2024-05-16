@@ -14,31 +14,33 @@ body {
 .navbar {
   display: flex;
   flex-flow: row wrap;
-  height: 100px;
+  /* height: 100px; */
   justify-content: center;
   align-items: center;
-  margin-left: 10%;
-  margin-right: 10%;
+  position: fixed;
+  width: 100%;
+  background: rgb(255, 255, 255, 0.9);
+  border-bottom: 1px solid transparent;
+  border-image: linear-gradient(to right, transparent, #755fe4, transparent) 1;
 }
 
 .logo {
   flex: 20%;
   text-align: left;
+  margin-left: 10%;
 }
 
 .logo h1 {
   font-family: "Lobster", sans-serif;
   color: #1c2046;
   font-size: 34px;
+  cursor: default;
 }
 
 .menu {
-  display: flex;
-  flex-flow: row wrap;
-  flex: 80%;
+  flex: 60%;
   text-align: right;
-  padding: 20px 0 20px 20px;
-  /* justify-content: flex-end; */
+  margin-right: 10%;
 }
 
 .menu a {
@@ -46,6 +48,7 @@ body {
   text-decoration: none;
   font-size: 20px;
   padding: 20px 16px;
+  margin-left: 5%;
 }
 
 .menu a:hover {
@@ -53,11 +56,25 @@ body {
   border-top: 4px solid #1c2046;
 }
 
-.menu-texto {
+/* .menu-texto {
   flex: 50%;
+} */
+
+#botao {
+  background: #1c2046;
+  padding: 10px 25px;
+  color: white;
+  border-radius: 5px;
+  margin-left: 5%;
+  justify-content: center;
 }
 
-.menu-botao {
+#botao:hover {
+  border: none;
+  background: #755fe4;
+}
+
+/* .menu-botao {
   flex: 5%;
 }
 
@@ -73,13 +90,14 @@ body {
   border: none;
   color: white;
   background: #755fe4;
-}
+} */
 
 .header {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
+  padding-top: 100px;
 }
 
 .headline {
@@ -133,10 +151,11 @@ body {
 
 section {
   display: inline-block;
-  margin-top: 50px;
+  margin-top: 10px;
   margin-left: 5%;
   margin-right: 5%;
-  height: 400px;
+  margin-bottom: 0%;
+  max-height: 600px; /* Necessário fixar um valor para que o rodapé fique estático ao passar o mouse */
   text-align: center;
   padding: 5%;
   width: 90%;
@@ -162,17 +181,64 @@ section h2 {
   margin: 1%;
   border: 1px solid #755fe4;
   border-radius: 10px;
+  cursor: pointer;
+}
+
+.texto-oculto {
+  display: none;
 }
 
 .card:hover {
   background: #755fe4;
   color: white;
   padding-top: 70px;
+  padding-bottom: 40px;
   cursor: pointer;
 }
 
 .card:hover img {
   display: none;
+}
+
+.card:hover .card-text {
+  display: none;
+}
+
+.card:hover .texto-oculto {
+  display: block;
+}
+
+footer {
+  margin-top: 100px;
+  height: 400px;
+  background-image: linear-gradient(180deg, #1b0f5a, #1c2046, black);
+  text-align: center;
+  border-top: 5px solid #755fe4;
+}
+
+.logo-rodape {
+  padding: 100px;
+}
+
+.agencia {
+  font-family: "Lobster", sans-serif;
+  color: white;
+  font-size: 34px;
+  cursor: default;
+}
+
+.agencia-texto {
+  color: white;
+}
+
+.whatsapp-link {
+  position: fixed;
+  bottom: 5px;
+  right: 10px;
+}
+
+.whatsapp-imagem {
+  width: 95px;
 }
 
 /* A classe view e suas variantes foram criadas apenas para melhorar a visualização da área do elemento na hora de editar */

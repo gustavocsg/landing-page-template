@@ -1,0 +1,67 @@
+@media screen and (max-width: 1050px) {
+  .menu {
+    display: none;
+  }
+
+  .navbar {
+    position: relative;
+  }
+
+  .logo {
+    text-align: center;
+    margin: 0;
+  }
+
+  .header {
+    padding-top: 25px;
+  }
+}
+
+@media screen and (max-width: 1085px) and (min-width: 1024px) {
+  section {
+    padding-right: 0;
+  }
+
+  .card {
+    width: 30%;
+  }
+
+  .whatsapp-imagem {
+    width: 65px;
+    opacity: 0.8;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .headline {
+    flex: 100%;
+    margin: 5%;
+    text-align: center;
+  }
+
+  .headline p {
+    text-align: center;
+  }
+
+  .img-headline {
+    flex: 100%;
+    margin: 5%;
+    text-align: center;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  .whatsapp-imagem {
+    width: 65px;
+    opacity: 0.8;
+  }
+}
+
+/* para celular */
+@media screen and (max-width: 767px) {
+  .whatsapp-link {
+    display: none;
+  }
+}
